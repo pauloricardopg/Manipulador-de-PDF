@@ -65,6 +65,6 @@ Este é um sistema web completo para **manipulação de arquivos PDF**, desenvol
 Desenvolvido por **Paulo Ricardo Pereira Gomes**  
 📧 pauloricardo1705@gmail.com  
 🔗 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil-blue?logo=linkedin&style=flat-square)](https://linkedin.com/in/pauloricardopg)  
-🌐 [![Portfólio](https://img.shields.io/badge/Portfólio-Acessar-informational?style=flat-square&logo=internet-explorer)](https://web-production-4f4b3.up.railway.app/))
+🌐 [![Portfólio](https://img.shields.io/badge/Portfólio-Acessar-informational?style=flat-square&logo=internet-explorer)](https://web-production-4f4b3.up.railway.app/)
 
 
