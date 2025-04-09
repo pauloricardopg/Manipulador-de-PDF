@@ -1,0 +1,84 @@
+<style>
+    h5 {
+      color: black;
+    }
+  
+    p {
+      color: black;
+    }
+</style>
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="{{ url_for('pdf_word') }}">
+            <img src="{{ url_for('static', filename='images/pdf-docx.png') }}" class="d-block w-100" alt="pdf-docx">
+        </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>PDF para DOCX</h5>
+          <p>Converta seus arquivos PDF em documentos do Word com facilidade.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="{{ url_for('pdf_jpeg') }}">
+            <img src="{{ url_for('static', filename='images/pdf-jpeg.png') }}" class="d-block w-100" alt="pdf-jpeg">
+        </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>PDF para JPEG</h5>
+          <p>Transforme páginas em imagens JPEG nítidas.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="{{ url_for('pdf_png') }}">
+            <img src="{{ url_for('static', filename='images/pdf-png.png') }}" class="d-block w-100" alt="pdf-png">
+        </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>PDF para PNG</h5>
+          <p>Exporte seu PDF em formato PNG para preservar transparência e alta qualidade.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="{{ url_for('merge_pdf_page') }}">
+            <img src="{{ url_for('static', filename='images/juntar-pdf.png') }}" class="d-block w-100" alt="pdf-png">
+        </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Juntar PDFs</h5>
+          <p>Reúna vários documentos PDF em um único arquivo de forma organizada.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="{{ url_for('separar_pdf_page') }}">
+            <img src="{{ url_for('static', filename='images/separar-pdf.png') }}" class="d-block w-100" alt="pdf-png">
+        </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Separar PDFs</h5>
+          <p>Extraia páginas específicas de um PDF ou separe um arquivo em vários documentos menores.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="{{ url_for('girar_pdf_page') }}">
+            <img src="{{ url_for('static', filename='images/girar-pdf.png') }}" class="d-block w-100" alt="pdf-png">
+        </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Girar PDF</h5>
+          <p>Gire páginas do seu PDF 90, 180 ou 270 graus de forma simples e rápida, sem perder a qualidade.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>

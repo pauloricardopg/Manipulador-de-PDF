@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}PDFs unidos com sucesso{% endblock %}
+{% block body %}
+<div class="container mt-4 text-center">
+    <h2 class="mb-3">PDFs unidos com sucesso!</h2>
+
+    <p class="lead">Seu arquivo final está pronto para download:</p>
+
+    <a href="{{ url_for('download_file', filename=arquivo_convertido) }}" class="btn btn-primary btn-lg mt-3">
+        📥 Baixar arquivo unido
+    </a>
+
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}PDF Separado{% endblock %}
+{% block body %}
+<div class="container mt-4">
+    <h2>PDF separado com sucesso!</h2>
+    <p class="lead">Clique nos links abaixo para baixar cada página individualmente:</p>
+    <ul class="list-group mt-3">
+        {% for arq in arquivos %}
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>{{ arq }}</span>
+                <a href="{{ url_for('download_file', filename=arq) }}" class="btn btn-sm btn-success">Baixar</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

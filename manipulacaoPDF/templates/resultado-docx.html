@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Conversão pronta{% endblock %}
+{% block body %}
+<div class="container mt-4">
+    <h2>Arquivo convertido com sucesso!</h2>
+    <a href="{{ url_for('download_file', filename=arquivo_convertido) }}" class="btn btn-primary mt-3">
+        Baixar
+    </a>
+</div>
+{% endblock %}

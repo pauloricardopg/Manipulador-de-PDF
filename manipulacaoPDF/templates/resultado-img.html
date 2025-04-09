@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Conversão pronta{% endblock %}
+{% block body %}
+<div class="container mt-4">
+    <h2>Conversão concluída com sucesso!</h2>
+
+    {% if imagens %}
+        
+
+        <!-- Formulário para selecionar páginas -->
+        <form method="POST" action="{{ url_for('download_selected_zip') }}">
+            <div class="row">
+                {% for img in imagens %}
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img src="{{ url_for('download_file', filename=img) }}" class="card-img-top" alt="Imagem da página">
+                            <div class="card-body text-center">
+                                <input type="checkbox" name="selected_images" value="{{ img }}">
+                                <label>{{ img }}</label>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="text-center mt-3">
+                <button type="submit" class="btn btn-warning">📥 Baixar selecionadas em .zip</button>
+            </div>
+        </form>
+    {% else %}
+        <p>Nenhuma imagem foi gerada.</p>
+    {% endif %}
+</div>
+{% endblock %}

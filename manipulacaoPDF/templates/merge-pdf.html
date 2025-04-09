@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Juntar PDFs{% endblock %}
+{% block body %}
+<div class="container mt-4">
+    <h2>Enviar múltiplos PDFs para juntar</h2>
+    <form action="{{ url_for('merge_pdfs') }}" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="pdfs">Selecione os arquivos PDF:</label>
+            <input type="file" class="form-control" name="pdfs" multiple required>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Juntar PDFs</button>
+    </form>
+</div>
+{% endblock %}

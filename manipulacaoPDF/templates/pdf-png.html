@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Conversor de PDF{% endblock title %}
+{% block body %}
+<div class="container mt-4">
+    <h2>Enviar PDF para conversão</h2>
+    <form action="{{ url_for('upload_pdf_png') }}" method="POST" enctype="multipart/form-data">
+        <input type="file" name="pdf_file" accept="application/pdf" required class="form-control mb-3">
+        <button type="submit" class="btn btn-success">Converter para PNG</button>
+    </form>
+</div>
+{% endblock %}

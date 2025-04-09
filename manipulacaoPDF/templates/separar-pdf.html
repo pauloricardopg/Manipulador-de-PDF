@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Separar PDF{% endblock %}
+{% block body %}
+<div class="container mt-4">
+    <h2>Separar um PDF por página</h2>
+    <form action="{{ url_for('separar_pdf') }}" method="POST" enctype="multipart/form-data" class="mt-3">
+        <div class="mb-3">
+            <label for="pdf_file" class="form-label">Escolha o arquivo PDF:</label>
+            <input type="file" class="form-control" name="pdf_file" accept=".pdf" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Separar PDF</button>
+    </form>
+</div>
+{% endblock %}
