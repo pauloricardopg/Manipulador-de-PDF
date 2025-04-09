@@ -58,4 +58,13 @@ Este é um sistema web completo para **manipulação de arquivos PDF**, desenvol
 ### 🔄 Girar Páginas do PDF
 ![Girar PDF] ![image](https://github.com/user-attachments/assets/f64c04d7-244a-4f86-9ee6-5030a0032e0d)
 
+---
+
+## 📬 Contato
+
+Desenvolvido por **Paulo Ricardo Pereira Gomes**  
+📧 pauloricardo1705@gmail.com  
+🔗 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil-blue?logo=linkedin&style=flat-square)](https://linkedin.com/in/pauloricardopg)  
+🌐 [![Portfólio](https://img.shields.io/badge/Portfólio-Acessar-informational?style=flat-square&logo=internet-explorer)](https://restaurante-production-d756.up.railway.app/)
+
 
