@@ -30,7 +30,7 @@ Este é um sistema web completo para **manipulação de arquivos PDF**, desenvol
 - **pdf2docx**
 - **pdf2image**
 - **PyPDF2**
-- **Bootstrap 5.3**
+- **Bootstrap 5.0.2**
 - **Jinja2** (para renderização dos templates)
 - HTML5, CSS3 (via Bootstrap)
 
